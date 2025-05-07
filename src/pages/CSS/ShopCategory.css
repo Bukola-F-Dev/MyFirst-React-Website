@@ -1,0 +1,28 @@
+ .shopcategory-indexsort{
+     display: flex;
+     margin: 0px 100px;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 30px;
+ }
+ .shopcategory-indexsort p span{
+     font-weight: 600;
+}
+ .shopcategory-sort{
+     display: flex;
+     padding: 6px 18px;
+     border-radius: 20px;
+     border: 1px solid #888;
+     gap: 15px;
+ }
+ .shopcategory-sort img{
+     width: 15px;
+     height: 15px;
+     margin-top: 5px;
+ }
+ .shopcategory-product{
+     display: grid;
+     margin: 20px 170px;
+     grid-template-columns: 1fr 1fr 1fr;
+     row-gap: 80px;
+ }
