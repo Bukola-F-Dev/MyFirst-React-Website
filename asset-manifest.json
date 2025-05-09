@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyFirst-React-Website/static/css/main.f3cd2fa2.css",
-    "main.js": "/MyFirst-React-Website/static/js/main.3e62b611.js",
+    "main.js": "/MyFirst-React-Website/static/js/main.ce90302e.js",
     "static/media/Hero-img.png": "/MyFirst-React-Website/static/media/Hero-img.441a627f8f47418d790f.png",
     "static/media/11.jpg": "/MyFirst-React-Website/static/media/11.7570949b40a1942e342f.jpg",
     "static/media/9.avif": "/MyFirst-React-Website/static/media/9.f58cbc5a05803cf406c9.avif",
@@ -44,10 +44,10 @@
     "static/media/Cart-icon.avif": "/MyFirst-React-Website/static/media/Cart-icon.82c6751e1a3c7436c399.avif",
     "index.html": "/MyFirst-React-Website/index.html",
     "main.f3cd2fa2.css.map": "/MyFirst-React-Website/static/css/main.f3cd2fa2.css.map",
-    "main.3e62b611.js.map": "/MyFirst-React-Website/static/js/main.3e62b611.js.map"
+    "main.ce90302e.js.map": "/MyFirst-React-Website/static/js/main.ce90302e.js.map"
   },
   "entrypoints": [
     "static/css/main.f3cd2fa2.css",
-    "static/js/main.3e62b611.js"
+    "static/js/main.ce90302e.js"
   ]
 }
