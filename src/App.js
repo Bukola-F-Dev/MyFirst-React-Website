@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
 
-      <BrowserRouter>
+      <BrowserRouter basename="/MyFirst-React-Website">
       <Navbar/>
       <Routes>
         <Route path= '/' element={<Shop/>}/>
