@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyFirst-React-Website/static/css/main.696e607c.css",
-    "main.js": "/MyFirst-React-Website/static/js/main.9d00745e.js",
+    "main.css": "/MyFirst-React-Website/static/css/main.3770421b.css",
+    "main.js": "/MyFirst-React-Website/static/js/main.120af8f9.js",
     "static/media/Hero-img.png": "/MyFirst-React-Website/static/media/Hero-img.441a627f8f47418d790f.png",
     "static/media/11.jpg": "/MyFirst-React-Website/static/media/11.7570949b40a1942e342f.jpg",
     "static/media/9.avif": "/MyFirst-React-Website/static/media/9.f58cbc5a05803cf406c9.avif",
@@ -18,7 +18,6 @@
     "static/media/21.avif": "/MyFirst-React-Website/static/media/21.1db900eb220282236ef2.avif",
     "static/media/1.avif": "/MyFirst-React-Website/static/media/1.ac5758656d9804360757.avif",
     "static/media/29.jpg": "/MyFirst-React-Website/static/media/29.d53788796d8a1150e8db.jpg",
-    "static/media/17.avif": "/MyFirst-React-Website/static/media/17.61d35ff823c82814b86d.avif",
     "static/media/7.jpg": "/MyFirst-React-Website/static/media/7.6e38c45e49543a74b9ee.jpg",
     "static/media/15.avif": "/MyFirst-React-Website/static/media/15.b765de518686cb8bcf32.avif",
     "static/media/31.avif": "/MyFirst-React-Website/static/media/31.4abeefdb575268cabbce.avif",
@@ -35,18 +34,16 @@
     "static/media/facebook.png": "/MyFirst-React-Website/static/media/facebook.f778bf0b0bf9464ee872.png",
     "static/media/24.avif": "/MyFirst-React-Website/static/media/24.6349a9f78371b621f8fb.avif",
     "static/media/20.avif": "/MyFirst-React-Website/static/media/20.0e5fccb457d1acb14778.avif",
-    "static/media/5.avif": "/MyFirst-React-Website/static/media/5.3b4c502afe305d7a6b8d.avif",
     "static/media/6.avif": "/MyFirst-React-Website/static/media/6.ad7331142f46b7fc3487.avif",
     "static/media/linkedin.png": "/MyFirst-React-Website/static/media/linkedin.a0f33b21359642908f29.png",
-    "static/media/30.avif": "/MyFirst-React-Website/static/media/30.f398b614427f07db5db9.avif",
     "static/media/logo.avif": "/MyFirst-React-Website/static/media/logo.b85610702ec72f877dcb.avif",
     "static/media/Cart-icon.avif": "/MyFirst-React-Website/static/media/Cart-icon.82c6751e1a3c7436c399.avif",
     "index.html": "/MyFirst-React-Website/index.html",
-    "main.696e607c.css.map": "/MyFirst-React-Website/static/css/main.696e607c.css.map",
-    "main.9d00745e.js.map": "/MyFirst-React-Website/static/js/main.9d00745e.js.map"
+    "main.3770421b.css.map": "/MyFirst-React-Website/static/css/main.3770421b.css.map",
+    "main.120af8f9.js.map": "/MyFirst-React-Website/static/js/main.120af8f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.696e607c.css",
-    "static/js/main.9d00745e.js"
+    "static/css/main.3770421b.css",
+    "static/js/main.120af8f9.js"
   ]
 }
