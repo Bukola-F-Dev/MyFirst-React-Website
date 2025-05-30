@@ -67,7 +67,7 @@ const Payment = () => {
       { name: "T-Shirt", price: 2000, quantity: 1 }
     ];
 
-    fetch("https://stripe-backend-f060.onrender.com/create-payment-intent", {
+    fetch("http://localhost:4242/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
