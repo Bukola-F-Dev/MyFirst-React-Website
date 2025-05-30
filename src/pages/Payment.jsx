@@ -67,7 +67,7 @@ const Payment = () => {
       { name: "T-Shirt", price: 2000, quantity: 1 }
     ];
 
-    fetch("http://localhost:4242/create-payment-intent", {
+    fetch("https://stripe-backend-f060.onrender.com/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -80,9 +80,12 @@ const Payment = () => {
       .then(data => {
         if (data.clientSecret) {
           setClientSecret(data.clientSecret);
-        } else {
+        }
+        
+        else {
           setError("Failed to get client secret");
         }
+        
       })
       .catch(err => {
         setError(err.message);
