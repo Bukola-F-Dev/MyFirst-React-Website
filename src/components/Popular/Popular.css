@@ -22,3 +22,36 @@
     display: flex;
     gap: 30px;
 }
+@media (max-width: 1050px){
+     
+}
+@media (max-width: 750px){
+    .popular{
+        gap: 9px;
+        height: 60vh;
+        margin-bottom: 80px;
+    }
+    .popular h1{
+        font-size: 14px;
+    }
+    .popular hr{
+        width: 150px;
+        height: 1px;
+    }
+    .popular-item{
+        margin-top: 40px;
+        gap: 15px;
+    }
+    .popular-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        overflow-x: scroll;
+              margin-top: 50px;
+              gap: 30px;
+          }
+          .popular-item::-webkit-scrollbar{
+              display: none;
+          }
+}

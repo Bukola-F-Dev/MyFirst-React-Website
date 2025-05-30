@@ -65,3 +65,45 @@ margin-bottom: 30px;
 color: black;
 font-size: 14px;
 }
+
+@media (max-width: 1024px){
+     
+}
+@media (max-width: 750px){
+        .footer-logo img{
+            width: 30px;
+           height: 30px;
+           border-radius: 50%;
+        }
+        .footer-logo p{
+            font-size: 15px;
+        }
+        .footer ul{
+            gap: 20px;
+            font-size: 12px;
+        }
+        .social-media-icons{
+            display: flex;
+            gap: 14px;
+        }
+        .social-links img{
+            width: 55px;
+        }
+        .social-links-whatsapp{
+            width: 44px;
+            margin-top: 2px;
+        }
+        .social-links-facebook{
+            width: 66px;
+            margin-top: 1px;
+        }
+        .footer-copyright hr{
+            width: 90%;
+        }
+        .footer-copyright{
+        gap: 30px;
+        width: 90%;
+        margin-bottom: 30px;
+        font-size: 12px;
+        }
+}

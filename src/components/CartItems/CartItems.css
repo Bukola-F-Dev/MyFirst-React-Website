@@ -1,5 +1,5 @@
 .cartitems{
-    margin: 50px 100px;
+    margin: 50px 70px;
 }
 .cartitems hr{
     background: #e2e2e2;
@@ -8,7 +8,7 @@
 }
 .cartitems-format-main{
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 50px;
     padding: 10px 0;
@@ -71,4 +71,52 @@ gap: 40px;
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
+}
+
+@media (max-width: 1024px){
+ 
+}
+@media (max-width: 750px){
+    .cartitems{
+        margin: 30px 45px;
+    }
+    .cartitems hr{
+        height: 1.5px;
+    }
+    .cartitems-format-main{
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 6px 0;
+        font-size: 10px;
+    }
+    .cartitems-format{
+        font-size: 9px;
+    }
+    .carticon-product-icon{
+        width: 35px;
+    }
+    .carticon-product-icon-remove{
+       width: 24px;
+       height: 12px;
+        font-size: 8px;
+    }
+    .cartitems-quantity{
+        width: 24px;
+    height: 12px;
+    }
+    .cartitems-down{
+    margin: 30px;
+    }
+    .cartitems-total{
+    margin-right: 80px;
+    gap: 20px;
+    }
+    .cartitems-total button{
+        width: 110px;
+        height: 18px;
+        font-size: 10px;
+        }
+    .cartitems-total-item{
+        padding: 8px 0;
+    }
 }

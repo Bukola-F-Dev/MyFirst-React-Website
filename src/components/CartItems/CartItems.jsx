@@ -1,11 +1,14 @@
 import React, { useContext } from 'react';
 import './CartItems.css';
 import { ShopContext } from '../../Context/ShopContext';
+import { useNavigate } from 'react-router-dom';
 
 const CartItems = () => {
-  const {getTotalCartAmount, all_product, cartItems, removeFromCart } = useContext(ShopContext);
+  const {getTotalCartAmount, all_product, cartItems, removeFromCart, addToCartInCartPage } = useContext(ShopContext);
 
   const hasItems = Object.values(cartItems).some((qty) => qty > 0);
+
+const navigate = useNavigate();
 
   return (
     <div className='cartitems'>
@@ -16,6 +19,7 @@ const CartItems = () => {
         <p>Quantity</p>
         <p>Total</p>
         <p>Remove</p>
+        <p>Add</p>
       </div>
       <hr />
 
@@ -31,6 +35,8 @@ const CartItems = () => {
                   <button className='cartitems-quantity'>{cartItems[e.id]}</button>
                   <p>${e.price * cartItems[e.id]}</p>
                   <button className='carticon-product-icon-remove' onClick={() => removeFromCart(e.id)}>-</button>
+                  <button className='carticon-product-icon-remove' onClick={() => addToCartInCartPage(e.id)}>+</button>
+                
                 </div>
                 <hr />
               </div>
@@ -61,7 +67,7 @@ const CartItems = () => {
       <h3>${getTotalCartAmount()}</h3>
                   </div>
               </div>
-              <button>PROCEED TO CHECKOUT</button>
+              <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
           </div>
       </div>
     </div>

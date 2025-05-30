@@ -22,3 +22,32 @@
      margin-top: 50px;
      gap: 30px;
  }
+ @media (max-width: 1050px){
+  
+ }
+@media (max-width: 750px){
+    .newCollection{
+        gap: 9px;
+        margin-bottom: 100px;
+    }
+    .newCollection h1{
+        font-size: 17px;
+    }
+    .newCollection hr{
+        width: 70%;
+        height: 1px;
+    }
+    .new-products-collection{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        overflow-x: scroll;
+              margin-top: 30px;
+              gap: 40px;
+              margin-right: 0;
+          }
+          .new-products-collection::-webkit-scrollbar{
+              display: none;
+          }
+}

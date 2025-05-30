@@ -1,0 +1,17 @@
+.completion h1{
+text-align: center;
+font-size: 50px;
+}
+.completion p{
+    text-align: center;
+    font-size: 30px;
+    }
+    .completion{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .completion-link{
+        color: orangered;
+        font-size: 10px;
+        cursor: pointer;
+    }

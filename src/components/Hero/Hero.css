@@ -33,8 +33,7 @@ line-height: 1.1;
 
 }
 .new-img{
-    width: 150px;
-   
+    width: 150px;  
 }
 .hero-btn{
     height: 35px;
@@ -62,4 +61,59 @@ line-height: 1.1;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media (max-width: 1050px){
+    .hero-section{
+        height: 38vh;
+        margin-bottom: 70px;
+        }
+        .hero-left{
+            padding-left: 70px;
+            line-height: 1;
+            }
+            .hero-left h1{
+                font-size: 45px;
+                font-weight: 700;
+                margin: 0;
+            }
+        .hero-left p{
+            font-size: 18px;
+        }
+        .hero-img{
+            width: 330px;
+        }  
+        .hero-btn{
+            margin-top: 20px;
+        }
+}
+@media (max-width: 750px){
+    .hero-section{
+        height: 25vh;
+        margin-bottom: 75px;
+        }
+        .hero-left{
+        gap: 15px;
+        padding-left: 8px;
+        line-height: 0.9;
+        }
+        .hero-left p{
+            font-size: 9px;
+            margin-top: 30px;
+        }
+        .hero-left h1{
+            font-size: 20px;
+        }
+        .hero-btn{
+            height: 20px;
+            font-size: 8px;
+            gap: 9px;
+            margin-top: 0px;
+            width: 80px;
+        }
+        .hero-right{
+          width: 120px;
+        }
+        .hero-img{
+            width: 120px;
+        } 
 }
