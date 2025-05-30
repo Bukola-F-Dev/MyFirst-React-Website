@@ -62,36 +62,35 @@ const Payment = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Replace this items array with your actual cart items
-    const items = [
-      { name: "T-Shirt", price: 2000, quantity: 1 }
-    ];
-
+    console.log("📡 Starting fetch to backend...");
+  
     fetch("https://stripe-backend-f060.onrender.com/create-payment-intent", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          items: [
-            { name: "T-shirt", price: 20, quantity: 1 } // example item
-          ],
-        }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        items: [{ name: "T-shirt", price: 20, quantity: 1 }],
+      }),
     })
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => {
+        console.log("✅ Got response from backend:", res);
+        return res.json();
+      })
+      .then((data) => {
+        console.log("🔐 Client Secret from backend:", data.clientSecret);
         if (data.clientSecret) {
           setClientSecret(data.clientSecret);
-        }
-        
-        else {
+        } else {
           setError("Failed to get client secret");
         }
-        
       })
-      .catch(err => {
+      .catch((err) => {
+        console.error("❌ Error fetching client secret:", err);
         setError(err.message);
       });
   }, []);
-
+  
   if (error) return <div>Error: {error}</div>;
   if (!clientSecret) return <div>Loading payment form...</div>;
 
