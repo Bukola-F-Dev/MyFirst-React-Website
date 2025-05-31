@@ -64,7 +64,7 @@ const Payment = () => {
   useEffect(() => {
     console.log("📡 Starting fetch to backend...");
   
-    fetch("https://stripe-backend-f060.onrender.com/create-payment-intent", {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/create-payment-intent`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -90,7 +90,7 @@ const Payment = () => {
         setError(err.message);
       });
   }, []);
-  
+
   if (error) return <div>Error: {error}</div>;
   if (!clientSecret) return <div>Loading payment form...</div>;
 
