@@ -62,8 +62,9 @@ const Payment = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    console.log("📡 Starting fetch to backend...");
-  
+    
+    console.log("Backend URL:", process.env.REACT_APP_BACKEND_URL);
+    
     fetch(`${process.env.REACT_APP_BACKEND_URL}/create-payment-intent`, {
       method: "POST",
       headers: {
