@@ -8,7 +8,7 @@ import {
 } from '@stripe/react-stripe-js';
 
 
-const BACKEND_URL ="https://stripe-backend-f060.onrender.com";
+const BACKEND_URL = "https://stripe-backend-f060.onrender.com";
 
 
 const stripePromise = loadStripe('pk_test_51RPgDeCIYq07lQ5BsglcwSEcoHR5Q11V5qrzk0Dd4enbebpbDM3BNB9tkWo4WUK8S4FrErphFnPNdzbgjVB65FpP00E0pz1Pf7'); // Replace with your Stripe publishable key
@@ -66,7 +66,7 @@ const Payment = () => {
 
   useEffect(() => {
     
-    console.log("Backend URL:", process.env.REACT_APP_BACKEND_URL);
+    console.log(BACKEND_URL);
     
     fetch(`${BACKEND_URL}/create-payment-intent`, {
       method: "POST",
@@ -77,10 +77,12 @@ const Payment = () => {
         items: [{ name: "T-shirt", price: 20, quantity: 1 }],
       }),
     })
-      .then((res) => {
-        console.log("✅ Got response from backend:", res);
-        return res.json();
-      })
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`Server responded with status ${res.status}`);
+      }
+      return res.json();
+    })
       .then((data) => {
         console.log("🔐 Client Secret from backend:", data.clientSecret);
         if (data.clientSecret) {
