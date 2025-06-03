@@ -7,10 +7,6 @@ import {
   PaymentElement
 } from '@stripe/react-stripe-js';
 
-
-const BACKEND_URL = "https://stripe-backend-f060.onrender.com";
-
-
 const stripePromise = loadStripe('pk_test_51RPgDeCIYq07lQ5BsglcwSEcoHR5Q11V5qrzk0Dd4enbebpbDM3BNB9tkWo4WUK8S4FrErphFnPNdzbgjVB65FpP00E0pz1Pf7'); // Replace with your Stripe publishable key
 
 const CheckoutForm = ({ clientSecret }) => {
@@ -66,9 +62,7 @@ const Payment = () => {
 
   useEffect(() => {
     
-    console.log(BACKEND_URL);
-    
-    fetch(`${BACKEND_URL}/create-payment-intent`, {
+    fetch("https://stripe-backend-f060.onrender.com/create-payment-intent", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
