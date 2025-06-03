@@ -23,7 +23,7 @@ const CheckoutForm = ({ clientSecret }) => {
     setIsProcessing(true);
     
 
-    const returnUrl = `${window.location.origin}/#/completion?payment=completed`;
+    const returnUrl = `${window.location.origin}/#/completion`;
     
     const { error } = await stripe.confirmPayment({
       elements,
