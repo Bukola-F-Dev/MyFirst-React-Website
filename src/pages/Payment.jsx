@@ -22,7 +22,7 @@ const CheckoutForm = ({ clientSecret }) => {
 
     setIsProcessing(true);
     
-    const returnUrl = `${window.location.origin}/MyFirst-React-Website/#/completion?payment=completed`;
+    const returnUrl = `${window.location.origin}/MyFirst-React-Website/?payment=completed`;
 
     const { error } = await stripe.confirmPayment({
       elements,
@@ -31,7 +31,7 @@ const CheckoutForm = ({ clientSecret }) => {
         return_url: returnUrl,
       },
     });
-    
+
     if (error) {
       setMessage(error.message);
     } else {

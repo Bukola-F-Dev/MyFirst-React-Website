@@ -15,12 +15,10 @@ import Payment from './pages/Payment';
 // This component must be inside HashRouter to use useNavigate
 function AppRoutes() {
   useEffect(() => {
-    // Stripe may redirect without preserving the # hash
     const query = window.location.search;
     const isStripeRedirect = query.includes('payment_intent');
-
+  
     if (isStripeRedirect) {
-      // Redirect manually to the hash route with query params
       window.location.href = `${window.location.origin}/MyFirst-React-Website/#/completion${query}`;
     }
   }, []);
