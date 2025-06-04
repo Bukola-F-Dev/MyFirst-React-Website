@@ -23,7 +23,7 @@ const CheckoutForm = ({ clientSecret }) => {
     setIsProcessing(true);
     
 
-    const returnUrl = `${window.location.origin}/#/completion`;
+    const returnUrl ="https://Bukola-F-Dev.github.io/MyFirst-React-Website/#/completion?payment=completed";;
     
     const { error } = await stripe.confirmPayment({
       elements,
