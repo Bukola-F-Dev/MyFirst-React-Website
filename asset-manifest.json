@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyFirst-React-Website/static/css/main.af766ff8.css",
-    "main.js": "/MyFirst-React-Website/static/js/main.f5da6ba6.js",
+    "main.css": "/MyFirst-React-Website/static/css/main.8ca5890e.css",
+    "main.js": "/MyFirst-React-Website/static/js/main.62ad294a.js",
     "static/media/Hero-img.png": "/MyFirst-React-Website/static/media/Hero-img.441a627f8f47418d790f.png",
     "static/media/11.jpg": "/MyFirst-React-Website/static/media/11.7570949b40a1942e342f.jpg",
     "static/media/9.avif": "/MyFirst-React-Website/static/media/9.f58cbc5a05803cf406c9.avif",
@@ -39,11 +39,11 @@
     "static/media/logo.avif": "/MyFirst-React-Website/static/media/logo.b85610702ec72f877dcb.avif",
     "static/media/Cart-icon.avif": "/MyFirst-React-Website/static/media/Cart-icon.82c6751e1a3c7436c399.avif",
     "index.html": "/MyFirst-React-Website/index.html",
-    "main.af766ff8.css.map": "/MyFirst-React-Website/static/css/main.af766ff8.css.map",
-    "main.f5da6ba6.js.map": "/MyFirst-React-Website/static/js/main.f5da6ba6.js.map"
+    "main.8ca5890e.css.map": "/MyFirst-React-Website/static/css/main.8ca5890e.css.map",
+    "main.62ad294a.js.map": "/MyFirst-React-Website/static/js/main.62ad294a.js.map"
   },
   "entrypoints": [
-    "static/css/main.af766ff8.css",
-    "static/js/main.f5da6ba6.js"
+    "static/css/main.8ca5890e.css",
+    "static/js/main.62ad294a.js"
   ]
 }
